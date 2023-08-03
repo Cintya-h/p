@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+
+<head>
+    <title> Velvet Brews </title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="velvetstyles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+<!--slideshow-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="ResponsiveSlides.js-master/responsiveslides.js"></script>
+</head>
+<body>
+   
+    <nav class="nav">
+        
+        <a href="vb-home.html"> Home </a>
+        
+        <a href="vb-menu.html"> Menu </a>
+        <img src="images/vellogo.png" alt="sphynx" class="navlogo">
+        
+        <a href="vb-shop.html"> Shop </a>
+    
+        <a href="vb-locations.html"> Locations </a>
+        </nav>
+<main>
+    <div class="summer-drink-container">
+        <div class="eternal-sunshine">
+            <img src="images/katherine-sousa-ln2R1wJ8TCM-unsplash.jpg" alt="hibiscus drink">
+            <div class="drink-info">
+            <h1>A cosmic burst of flavor!</h1>
+            <p>Try our Eternal Sunshine Refresher, a celestial blend of cold-brewed hibiscus tea and invigorating citrus.</p>
+        </div>
+        </div>
+    </div>
+    
+    <div class="home">
+        <img src="images/celine-ylmz-L2ost-ZEmK8-unsplash-min.jpg" alt="cafe" class="outsideimg" width="300" height="500">
+    <h1>About us:</h1>
+    <p>At Velvet Brews, we believe that coffee is an art, and we take pride in crafting each cup with precision and care. 
+        Our beans are carefully sourced from the finest coffee regions around the world, ensuring that every sip transports you to exotic lands and flavors. 
+        Whether you prefer a velvety smooth latte, a bold and robust espresso, or a soothing herbal tea, our menu is designed to cater to all taste buds.</p>
+    </div>
+
+    <div class="social-container">
+        <div class="social-info">
+        <h3>Join the Velvet Brews family! #VelvetBrews</h3>
+        </div>
+        <div class="slides-container">
+        <ul class="rslides">
+            <li><img src="images/coffe2.jpg" alt=""></li>
+            <li><img src="images/coffee3.jpg" alt=""></li>
+            <li><img src="images/coffee4.jpg" alt=""></li>
+            <li><img src="images/celine-ylmz-L2ost-ZEmK8-unsplash-min.jpg" alt=""></li>
+            <li><img src="images/coffee4.jpg" alt = " " ></li>
+          </ul>
+    </div>
+          <script>
+            $(function() {
+              $(".rslides").responsiveSlides();
+            });
+          </script>
+
+
+<form>
+    <div class="container">
+      <h2>Stay in the loop</h2>
+    </div>
+  
+    <div class="container" style="background-color:#8B647C">
+      <input type="text" placeholder="Name" name="name" required>
+      <input type="text" placeholder="Email address" name="mail" required>
+      <label>
+        <input type="checkbox" checked="checked" name="subscribe"> yes, send cool stuff
+      </label>
+    </div>
+  
+    <div class="container">
+      <input type="submit" value="Subscribe">
+    </div>
+  </form>
+
+    </div>
+<footer>
+    <!--social insert-->
+    <br><a href="#" class="fa fa-instagram"></a>
+    <a href="#" class="fa fa-facebook"></a>
+    <br>Copyright &copy; 2023 Velvet Brews <br>
+    <a href="mailto:VelvetBrews@vb.com">VelvetBrews@vb.com</a>
+</footer>
+</main>
+</body>
+</html>

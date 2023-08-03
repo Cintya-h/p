@@ -1,0 +1,715 @@
+.logo{
+   text-align:  center;
+    margin:0;
+    padding:15px;   
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+/* nav style */
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding:3px;
+    margin:2px;  
+}
+.nav a{
+    text-decoration: none;
+    color:#231269;
+    margin: 0 15px;  
+}
+
+.navlogo{
+    max-width: 100px;
+    margin:0 15px;
+}
+
+nav a:hover {
+    color:#DE6C7D;
+}
+
+h1{
+  text-align: center;  
+  color:#8B647C
+}
+
+h2{
+    text-align: center;
+    font-size: 40px;
+    margin:50px;
+    color:#8B647C;
+}
+h3{
+    text-align: center;
+    color:#8B647C;
+    font-size: 15px;
+    padding:0;
+}
+
+/*homepage*/
+.outsideimg{
+    max-width: 80%;
+    max-height:100%;
+    float:left;
+    padding: 10px;
+    margin:55px;
+}
+
+.home{
+width: 900px;
+padding: 20px;
+margin:0 auto;
+margin-top:15px;
+text-align: center;
+}
+
+.home h1{
+  margin-top: 60px;
+  margin-bottom: 0px;
+}
+.home p{
+  margin-top:10px;
+  text-align: justify;
+}
+
+.summer-drink-container{
+ margin: 30px;
+ width: 100%;
+ height:50%;
+ background-color:#8B647C;
+}
+
+.eternal-sunshine{
+  display: flex;
+  align-items: center;
+}
+.eternal-sunshine img{
+  width:35%;
+  height:20%;
+}
+
+.drink-info{
+  flex:1;
+  padding:20px;
+}
+
+.drink-info h1{
+  font-size: 50px;
+  color:#231269;
+}
+
+.drink-info p{
+  font-size: 40px;
+}
+
+.social-container{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ text-align: center;
+ margin:30px auto;
+}
+
+.social-info h3{
+  font-size: 20px;
+  margin-top:10px;
+  white-space: nowrap;
+  margin-left: -290px;
+}
+
+/* slide show*/
+.slides-container{
+  width:100%;
+  max-width: 23%;
+  margin-left: -300px;
+}
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0px;
+  margin:0 auto;
+  border: 1px solid #ab4494;
+}
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+}
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+}
+
+form {
+  margin-left: -700px;
+  margin-top: 20px;
+  width:100%;
+  max-width: 400px;
+}
+
+.container {
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+input[type=submit] {
+  background-color: #DE6C7D;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+/* location */
+#container-location {
+    max-width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+#location1 img,
+#location2 img,
+#location3 img
+ {
+  padding: 20px;
+}
+
+.container-location p{
+color:#231269;    
+}
+
+
+/* shop row 1*/
+.shop-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .item-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 60px; 
+    text-align: right;
+  }
+  
+  .item-1 img{
+    margin-bottom: 20px;
+    margin-top: 70px;
+    height: 200px;
+    width: 200px;
+  }
+  
+  .item-1 img:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5);
+  }
+  
+  .item-1 p,.item-1 input {
+    margin: 0;
+    padding-top: 5px; 
+    color:#231269;
+  }
+
+  /* menu */
+.menu-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.menu-img {
+  max-width: 200px; 
+  width: 100%;
+}
+
+.menu-info {
+  text-align: left;
+  font-size: 18px;
+}
+
+
+/*footer*/
+footer{
+    clear:both;
+    color:#DE6C7D;
+    text-align: center;
+    
+}
+a{
+    color:#DE6C7D;
+    text-decoration: none;
+}
+/* social buttons*/
+.fa-instagram {
+background-color:white;
+    color:#DE6C7D;
+    text-align:center;
+}
+
+.fa-facebook {
+background-color:white;
+    color:#DE6C7D;
+}
+
+.fa {
+  padding: 5px;
+  width: 10px;
+  text-decoration: none;
+  margin: 5px 5px;
+  border-radius: 60%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    color: #8B647C;
+}
+
+
+/* Media query for small screens (e.g., smartphones) */
+@media only screen and (max-width: 768px) {
+  /* Your CSS styles for small screens go here */
+
+  /* Homepage */
+  .home {
+      width: 100%;
+      padding: 10px;
+  }
+
+  .outsideimg {
+      max-width: 100%;
+      margin: 20px;
+  }
+
+  .nav {
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .nav a {
+      font-size: 20px;
+      padding: 10px 20px;
+      margin: 5px;
+  }
+
+  .summer-drink-container {
+      margin: 10px;
+      width: 100%;
+      height: 50%;
+      background-color: #8B647C;
+  }
+
+  .eternal-sunshine {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .eternal-sunshine img {
+      width: 100%;
+      height: 50%;
+  }
+
+  .drink-info {
+      flex: 1;
+      padding: 20px;
+  }
+
+  .drink-info h1 {
+      font-size: 30px;
+      color: #231269;
+  }
+
+  .drink-info p {
+      font-size: 25px;
+  }
+
+  .slides-container{
+    width:100%;
+    max-width: 23%;
+    margin-left: 30px;
+  }
+
+  .home p{
+    margin-top:10px;
+    margin-right: 10px;
+    display:flex;
+    flex-direction: column;
+    font-size: 15px;
+  }
+
+  .social-info h3 {
+      text-align: center;
+      font-size: 20px;
+      margin-top: 10px;
+      white-space: nowrap;
+      margin-left: 20px;
+  }
+
+  form {
+    width: 90%;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+
+  /* Location */
+  #container-location {
+      flex-direction: column;
+  }
+
+  #location1 img,
+  #location2 img,
+  #location3 img {
+      max-width: 100%;
+      height: auto;
+      margin: 10px 0;
+  }
+
+   /* menu */
+   .menu-container {
+    flex-direction: column;
+    align-items: center;
+   
+  }
+
+  .menu-img {
+    max-width: 30%;
+    margin-left: -250px;
+    margin-bottom: 20px;
+  }
+  .menu-info{
+    text-align: center;
+  }
+
+}
+
+/* Media query for medium screens (e.g., tablets) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Your CSS styles for medium screens go here */
+
+  /* Homepage */
+  .home {
+      width: 100%;
+      padding: 15px;
+  }
+
+  .outsideimg {
+      max-width: 70%;
+      margin: 30px;
+  }
+
+  .nav {
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .nav a {
+      font-size: 20px;
+      padding: 10px 20px;
+      margin: 5px;
+  }
+
+  .summer-drink-container {
+      margin: 10px;
+      width: 100%;
+      height: 50%;
+      background-color: #8B647C;
+  }
+
+  .eternal-sunshine {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .eternal-sunshine img {
+      width: 100%;
+      height: 50%;
+  }
+
+  .drink-info {
+      flex: 1;
+      padding: 20px;
+  }
+
+  .drink-info h1 {
+      font-size: 40px;
+      color: #231269;
+  }
+
+  .drink-info p {
+      font-size: 30px;
+  }
+
+  .social-info h3 {
+      text-align: center;
+      font-size: 20px;
+      margin-top: 10px;
+      white-space: nowrap;
+      margin-left: 20px;
+  }
+
+  form {
+    width: 90%;
+    max-width: 500px;
+    margin: 30px;
+    padding: 10px;
+}
+}
+
+/* Media query for large screens (e.g., desktops) */
+@media only screen and (min-width: 1025px) {
+  /* Your CSS styles for large screens go here */
+
+  /* Homepage */
+  .home {
+      width: 900px;
+      padding: 20px;
+  }
+
+  .outsideimg {
+      max-width: 80%;
+      margin: 55px;
+  }
+
+  .nav {
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .nav a {
+      font-size: 20px;
+      padding: 10px 20px;
+      margin: 5px;
+  }
+
+  .summer-drink-container {
+      margin: 30px;
+      width: 100%;
+      height: 50%;
+      background-color: #8B647C;
+  }
+
+  .eternal-sunshine {
+      display: flex;
+      align-items: center;
+  }
+
+  .eternal-sunshine img {
+      width: 35%;
+      height: 20%;
+  }
+
+  .drink-info {
+      flex: 1;
+      padding: 20px;
+  }
+
+  .drink-info h1 {
+      font-size: 50px;
+      color: #231269;
+  }
+
+  .drink-info p {
+      font-size: 40px;
+  }
+
+  .social-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 30px auto;
+  }
+
+  .social-info h3 {
+      font-size: 20px;
+      margin-top: 10px;
+      white-space: nowrap;
+      margin-left: -290px;
+  }
+
+  /* Slide show */
+  .slides-container {
+      width: 100%;
+      max-width: 23%;
+      margin-left: -300px;
+  }
+
+  .rslides {
+      position: relative;
+      list-style: none;
+      overflow: hidden;
+      width: 100%;
+      padding: 0px;
+      margin: 0 auto;
+      border: 1px solid #ab4494;
+  }
+
+  .rslides li {
+      -webkit-backface-visibility: hidden;
+      position: absolute;
+      display: none;
+      width: 100%;
+      left: 0;
+      top: 0;
+  }
+
+  .rslides li:first-child {
+      position: relative;
+      display: block;
+      float: left;
+  }
+
+  .rslides img {
+      display: block;
+      height: auto;
+      float: left;
+      width: 100%;
+      border: 0;
+  }
+
+  form {
+    margin-left: -700px;
+    margin-top: 50px;
+    width: 100%;
+    max-width: 400px;
+}
+
+  /* Location */
+  #container-location {
+      max-width: 100%;
+      padding: 20px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-evenly;
+  }
+
+  #location1 img,
+  #location2 img,
+  #location3 img {
+      padding: 20px;
+  }
+
+  .container-location p {
+      color: #231269;
+  }
+
+  /* Shop row 1 */
+  .shop-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .item-1 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin-right: 60px;
+      text-align: right;
+  }
+
+  .item-1 img {
+      margin-bottom: 20px;
+      margin-top: 70px;
+      height: 200px;
+      width: 200px;
+  }
+
+  .item-1 img:hover {
+      -ms-transform: scale(1.5); /* IE 9 */
+      -webkit-transform: scale(1.5); /* Safari 3-8 */
+      transform: scale(1.5);
+  }
+
+  .item-1 p,
+  .item-1 input {
+      margin: 0;
+      padding-top: 5px;
+      color: #231269;
+  }
+
+  /* Footer */
+  footer {
+      clear: both;
+      color: #DE6C7D;
+      text-align: center;
+  }
+
+  a {
+      color: #DE6C7D;
+      text-decoration: none;
+  }
+
+  /* Social buttons */
+  .fa-instagram {
+      background-color: white;
+      color: #DE6C7D;
+      text-align: center;
+  }
+
+  .fa-facebook {
+      background-color: white;
+      color: #DE6C7D;
+  }
+
+  .fa {
+      padding: 5px;
+      width: 10px;
+      text-decoration: none;
+      margin: 5px 5px;
+      border-radius: 60%;
+  }
+
+  .fa:hover {
+      opacity: 0.7;
+      color: #8B647C;
+  }
+}
+
