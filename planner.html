@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- timer website -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PLANNER.</title>
+    <!---<link rel="stylesheet" href="timerstyles.css"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--font styles-->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet"> <!--font link-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> <!--font-->
+    <link rel="stylesheet" href="plannerstyles.css">
+</head>
+<body>
+    <div class="date">
+        <h1 id="month"></h1>
+        <h2 id="date"></h2>
+    </div>
+   <!-- calendar start-->
+  <div class="sidebyside">
+   <div class="wrap">
+    <header>
+    <p class="current-date" id="currentMonthYear"></p>
+    <div class="icons">
+       <span id="prev" class="material-symbols-rounded">chevron_left</span>
+       <span id="next" class="material-symbols-rounded">chevron_right</span>
+     </div>
+    </header>
+    <div class="calendar">
+        <ul class="weeks">
+           <li>Sun</li>
+           <li>Mon</li>
+           <li>Tue</li>
+           <li>Wed</li> 
+           <li>Thu</li>
+           <li>Fri</li>
+           <li>Sat</li>
+        </ul>
+        <ul class="days" id="calendar-days">
+            <li class="inactive">30</li> <!--inactive day/last day of previous month-->
+            <li class="inactive">31</li>
+            <li class="inactive">1</li>
+            <li class="active">2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li> 
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+            <li>11</li>
+            <li>12</li>
+            <li>13</li> 
+            <li>14</li>
+            <li>15</li>
+            <li>16</li>
+            <li>17</li>
+            <li>18</li>
+            <li>19</li>
+            <li>20</li>
+            <li>21</li> 
+            <li>22</li>
+            <li>23</li>
+            <li>24</li>
+            <li>25</li>
+            <li>26</li>
+            <li>27</li> 
+            <li>28</li>
+            <li>29</li>
+            <li>30</li>
+            <li>31</li>
+            <li class="inactive">1</li>
+            <li class="inactive">2</li>
+            <li class="inactive">3</li>
+            <li class="inactive">4</li>
+            <li class="inactive">5</li>
+            <li class="inactive">6</li>
+            <li class="inactive">7</li>
+            <li class="inactive">8</li>
+            <li class="inactive">9</li>
+         </ul>
+   </div>
+   <!-- Closing div tag moved here -->
+   </div>
+
+    <!----  to-do list start -->
+    <div class="todo-container">
+        <div class="todo-app">
+        <h3>Things to-do . . .</h3>
+        <div class="todo-row">
+            <input type="text" id="input" placeholder="I need to . . . ">
+            <button id = "todoAdd"> Add </button>
+        </div>
+        <ul id="list-container">
+<!---comment this out <li class="checked">Task 1 </li>-->
+        </ul>
+        </div>   
+    </div>
+    </div>
+    <!--user input for times-->
+    <section> <!--user input the amount of time and clicks submit. when they click submit the function will be called-->
+       <div class="timer">
+        <input type="number" id="hoursInput" placeholder="Hours">
+        <input type="number" id="minutesInput" placeholder="Minutes">
+        <input type="number" id="secondsInput" placeholder="Seconds">
+        <button id="startbtn" >Start</button>
+    </section>
+    <main>
+    <!--this will hold the times -->
+   <div id ="timerContainer" class = "timerContainer">
+            <div class = "timerCenter"></div>
+            <div id="timer"></div>
+        </div>
+    </div>
+</div>
+    </main>
+    </body>
+    <script src="planner.java"></script>
+    </html>
