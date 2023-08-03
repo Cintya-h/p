@@ -1,0 +1,405 @@
+/*img logo styles */
+img {
+  width: 15%;
+  display: block;
+  margin: auto;
+}
+
+body {
+  background-color: #eae4d2;
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+  font-family: 'Caveat', cursive;
+}
+
+h2, h3 {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  font-family: 'Caveat', cursive;
+  font-size: 40px; 
+}
+
+input {
+  display: block;
+  flex-shrink: inherit;
+  margin-bottom: 5%;
+  font-size: 15px;
+}
+
+span {
+  color: #ab4494;
+  font-weight: bold;
+  font-family: serif;
+}
+
+/*toggle switch*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+/* Hide default checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 17px;
+  width: 15px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #7bab44;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #7bab44;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/*nav styles */
+ul {
+  list-style-type: none;
+  margin: 10px;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #efefef;
+  background-color: #f3f3f3;
+  font-size: 17px;
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+}
+
+li a {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #ddd;
+  color: white;
+}
+
+li a.active {
+  background-color: #ab4494;
+  color: white;
+}
+
+/*trinkets in the cart img & product info*/
+#item1, #item2, #item3 {
+  font-size: small;
+  margin: 0;
+  padding: 0;
+  line-height: 0.7px;
+  text-align: center;
+}
+
+#item1 img, #item2 img, #item3 img {
+  width: 60%;
+  height: auto;
+}
+
+/*stationary row 1*/
+.stickers, .accessories, .homeliving, .clothing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p1, .a1, .hl1, .c1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 60px; 
+  text-align: right;
+}
+
+.p1 img, .a1 img, .hl1 img, .c1 img {
+  margin-bottom: 20px;
+  margin-top: 70px;
+  height: 250px;
+  width: 250px;
+}
+
+.p1 img:hover, .a1 img:hover, .hl1 img:hover, .c1 img:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);
+}
+
+.p1 p, .a1 p, .hl1 p, .c1 p, .p1 input, .a1 input, .hl1 input, .c1 input {
+  margin: 0;
+  padding-top: 10px; 
+}
+
+
+/* accordion section move to center*/
+
+  .accordion{
+    position: relative;
+    padding:40px;
+  }
+
+  #shipping{
+    padding-left: 200px;
+    margin-left: 10px;
+    width:30%;
+   
+  }
+  
+
+  
+  /* order summary */
+  
+  #sum {
+    position: absolute;
+    top: 400px;
+    right: 500px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+
+#sum p {
+  font-family: 'caveat', cursive;
+  font-size: 100%;
+  font-weight: bold;
+}
+
+/* thanks sticker */
+#thanks {
+  position: absolute;
+  top: 400px;
+  right: 130px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  font-family: 'Caveat', cursive;
+  font-size: 25px;
+}
+
+/* slide show styles */
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 50%;
+  padding: 0px;
+  margin: 400px;
+  margin-top: 20px;
+  border-color: #ab4494;
+}
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+}
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+}
+
+/* Small screens */
+@media (max-width: 576px) {
+  img {
+    width: 30%;
+  }
+
+  ul {
+    font-size: 30px;
+  }
+
+  .shipping-details {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    width: 60%;
+    margin-left: -150px;
+  }
+  
+  #sum {
+    position: static;
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+
+  ul {
+    font-size: 14px;
+  }
+
+  .shipping-details,
+  #sum {
+    width: 80%;
+  }
+
+  #shipping {
+    padding-top: 10px;
+    width: 100%;
+    margin: 30px;
+    margin: -1px;
+  }
+
+  /* Display images as a column */
+  .stickers,
+  .accessories,
+  .homeliving,
+  .clothing,
+  .p1,
+  .a1,
+  .hl1,
+  .c1,
+  .p2,
+  .hl2 {
+    flex-direction: column; /* Display as column */
+    align-items: center;
+    margin-right: 0;
+  }
+
+  .p1 img,
+  .a1 img,
+  .hl1 img,
+  .c1 img,
+  .p2 img,
+  .hl2 img {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .clothing .c1 img {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  #thanks {
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    width: 80%;
+    padding: 10px;
+    font-size: 18px;
+  }
+}
+
+
+/* Medium screens */
+@media (min-width: 577px) and (max-width: 768px) {
+  img {
+    width: 10%;
+  }
+
+  ul{
+    font-size: 30px;
+  }
+  
+  #sum, #shipping {
+    width: 70%;
+  }
+  #sum{
+    margin-left: 900px;
+  }
+
+  #thanks {
+    top: 50%; 
+    right: 50%;
+    transform: translate(50%, -50%);
+    width: 60%; 
+    padding: 15px;
+    font-size: 22px;
+  }
+}
+  
+  
+/* Large screens */
+@media (min-width: 769px) {
+ img{
+  width:10%;
+ }
+ 
+  
+  .shipping-details {
+    justify-content: flex-start;
+    margin-top: 0;
+    width: 80%;
+  }
+
+  #sum {
+    position: absolute;
+    top: 400px;
+    right: 50px;
+    width: 30%; 
+}
+
+#thanks {
+  top: 50%; /* Center vertically */
+  right: 50%; /* Center horizontally */
+  transform: translate(50%, -50%);
+  width: 40%; /* Adjust the width for larger screens */
+  padding: 20px;
+  font-size: 25px;
+}
+}
