@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trinketville.</title>
+    <link rel="stylesheet" href="form.css">
+     <!-- link to jquery ui -->
+    <link rel="stylesheet" href="jquery-ui-1.13.2.custom/jquery-ui.css">
+    <link rel="stylesheet" href="jquery-ui-1.13.2.custom/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jquery-ui-1.13.2.custom/jquery-ui.theme.css">
+    <!--link to google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&display=swap" rel="stylesheet">
+    <!--link to java file-->
+    <script src="form1.js"></script>
+</head>
+<body>
+    <header>
+        <img src="images/trinkk.jpg">
+        <h1>Trinketville.</h1>
+    </header>
+    <!--nav-->
+    <ul>
+        <li><a href="t-clothing.html">Clothing</a></li>
+        <li><a href="t-accessories.html">Accessories</a></li>
+        <li><a href="t-homeliving.html">Home & Living</a></li>
+        <li><a href="t-stationary.html">Stationary</a></li>
+        <li style="float:right"><a class="active" href="t-shoppingbag.html"><span class="ui-icon ui-icon-cart"></span> Cart</a></li>
+    </ul>
+    <h1>Your Shopping Bag</h1>
+    <div id="sum">
+        <h3>Order Summary</h3>
+        <div id="orderSummary">
+        <p> Subtotal: $28.00 </p>
+        <p>Shipping Fee: <span ><b>FREE!</b></span></p>
+        <p> Tax: $3.00</p>
+        <p> Estimated total: $31.00 </p>
+        </div>
+    </div><!--end of shipdets-->
+<div class="shipping-details">
+    <section id="shipping">
+        <div id="accordion">
+            <h3>Your Trinkets</h3>
+        <div>
+           <div id="item1">
+                <img src="images/runninglate.jpg">
+                <p>Running Late t-shirt</p>
+                <p>Quantity: 1</p>
+                <p>Price: $13.00</p>
+            </div>
+            <div id="item2">
+                <img src="images/dogsticker.jpg">
+                <p>Dog Sticker Pack</p>
+                <p>Quantity: 1</p>
+                <p>Price: $5.00</p>
+            </div>
+            <div id="item3">
+                <img src="images/catsticker.jpg">
+                <p>Birthday Cat Sticker Pack</p>
+                <p>Quantity: 2</p>
+                <p>Price: $5.00</p>
+            </div>
+        </div> <!--end reg div-->
+        <h3>Shipping Address</h3>
+        <div>
+         <form action="t-orderplaced.html" method="post" name="frm" id="frm" >
+        <label for="fname" class>First Name</label> <span> </span>
+        <input type="text" name="fname" id="firstname" placeholder="First Name" maxlength=20>
+        <label for="lname">Last Name</label> <span> </span>
+        <input type="text" name="lname" id="lastname" placeholder="Last Name" maxlength=20>
+        <label for="adrss">Address</label><span> </span>
+        <input type="text" name="adrss" id="address" placeholder="Address" maxlength="40">
+        <label for="city">City</label><span> </span>
+        <input type="text" name="city" id="cty" placeholder="City" maxlength="40">
+        <label for="state">State</label><span> </span>
+        <input type="text" name="state" id="st" placeholder="State" maxlength="40">
+        <label for="zip">Zip</label><span> </span>
+        <input type="text" name="zip" id="zi" placeholder="Zip" maxlength="10">
+        <label for="email">Email Address</label> <span> </span>
+        <input type="text" name="email" id="mail" placeholder="Email Address" maxlength=30>
+        <label for="number">Mobile number</label><span> </span>
+        <input type="text" name="number" id="mobile" placeholder="Mobile number" maxlength="10">
+        </form>
+        </div> <!--end shipping address-->
+            <h3>Payment Method</h3>
+            <div class="radioset">
+                <form action="orderplaced.html" method="post" name="frm2" id="frm2" >
+                <label for="cc">Credit Card</label><span> </span>
+                <input type="radio" id="cc" name="payment" value="CreditCard">
+                <label for="gc"> Gift Card</label><span></span>
+                <input type="radio" id="gc" name="payment" value="giftcard">
+            <label for="creditcard">Card Numbers</label><span></span>
+            <input type="numbers" name="nmbr" id="cardnum" maxlength="16">
+            <label for ="expDate">Exp. Date</label><span></span>
+            <input type="numbers" name="exp" id="expDate" maxlength="4">
+            <div class="hide"> 
+            <label for ="secCode">Security Code</label><span></span>
+            <input type="text" name="sec" id="secCode" maxlength="3" >
+            </div>
+            <label class="switch">
+               <input id="toggle" type="checkbox"> 
+                <span class="slider round"></span> 
+            </label>
+            <p>Billing address is different from shipping</p>
+            <div class="addressForm" style="display: none;">
+            <label for="fname" class>First Name</label> <span> </span>
+            <input type="text" name="fname" id="afirstname" placeholder="First Name" maxlength=20>
+            <label for="lname">Last Name</label> <span> </span>
+            <input type="text" name="lname" id="alastname" placeholder="Last Name" maxlength=20>
+            <label for="adrss">Address</label><span> </span>
+            <input type="text" name="adrss" id="aaddress" placeholder="Address" maxlength="40">
+            <label for="city">City</label><span> </span>
+            <input type="text" name="city" id="acty" placeholder="City" maxlength="40">
+            <label for="state">State</label><span> </span>
+            <input type="text" name="astate" id="ast" placeholder="State" maxlength="2">
+            <label for="zip">Zip</label><span> </span>
+            <input type="text" name="zip" id="azip" placeholder="Zip" maxlength="5">
+                </div> <!--end of addressForm-->
+                <input type="submit" value="Place order" class="ui-button">
+                </form>
+            </div> <!--end of payment method-->
+</div> <!--end of accordion-->
+</section> <!--end shipping sec-->
+</div> <!--end summary section-->
+</body>
+<script src="jquery-ui-1.13.2.custom/external/jquery/jquery.js"></script>
+<script src="jquery-ui-1.13.2.custom/jquery-ui.js"></script>
+<script>
+    $("#accordion").accordion();
+    $( "#radioset" ).buttonset();
+</script>
+</html> 
